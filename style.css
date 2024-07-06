@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/assets/bg-desktop.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --melhor-color: rgba(255, 255, 255, 0.02);
+  --icons-color: rgba(255, 255, 255, 0.05);
+  --hover-color: rgba(255, 255, 255, 0.2);
+  --switch-mb: url(./assets/assets/moon-stars.svg);
+}
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --melhor-color: rgba(0, 0, 0, 0.02);
+  --icons-color: rgba(0, 0, 0, 0.05);
+  --hover-color: rgba(0, 0, 0, 0.164);
+  --switch-mb: url(./assets/assets/sun.svg);
+}
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+#abcd {
+  width: 360px;
+  padding: 0 24px;
+  margin: 56px auto 0px;
+}
+
+#perfil img {
+  width: 112px;
+  margin: auto;
+}
+#perfil {
+  text-align: center;
+  padding: 24px;
+}
+#perfil p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+#switch {
+ width: 64px;
+  position: relative;
+  margin: 4px auto;
+}
+.light #switch button{
+  right: 0;
+  left: initial;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-mb) center no-repeat;
+  border: 0;
+  border-radius: 50px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 1;
+  left: 0;
+}
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  border-radius: 9999px;
+  background: var(--melhor-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 24px 0;
+}
+ul li a {
+  display: flex;
+  justify-content: center;
+  list-style: center;
+  padding: 12px 24px;
+  background: var(--melhor-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+ul li a:hover {
+  background: var(--hover-color);
+  border: 1px solid var(--text-color);
+}
+
+#social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+#social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: back 0.2s;
+  padding: 14px;
+  border-radius: 50%;
+}
+
+#social-icons a:hover {
+  border: 1px solid rgba(255, 0, 0, 0.205);
+  background: var(--hover-color);
+}
+footer a {
+  color: rgba(255, 0, 0, 0.644);
+}
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
