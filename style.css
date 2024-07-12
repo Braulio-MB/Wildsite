@@ -125,7 +125,7 @@ ul li a:hover {
   background: var(--hover-color);
 }
 footer a {
-  color: rgba(255, 0, 0, 0.644);
+  color:rgb(148, 129, 105)
 }
 footer {
   padding: 24px 0;
