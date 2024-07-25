@@ -31,7 +31,7 @@ body * {
 }
 #abcd {
   width: 100%;
-  max max-width: 588px;
+  max-width: 588px;
   padding: 0 24px;
   margin: 56px auto 0px;
 }
@@ -50,7 +50,7 @@ body * {
   margin-top: 8px;
 }
 #switch {
- width: 64px;
+  width: 64px;
   position: relative;
   margin: 4px auto;
 }
@@ -65,10 +65,10 @@ body * {
   top: 50%;
   z-index: 1;
   left: 0;
-  animation: slide-back .2s;
+  animation: slide-back 0.2s;
 }
-.light #switch button{
-animation: slide-in .2s forwards;
+.light #switch button {
+  animation: slide-in 0.2s forwards;
 }
 #switch button:hover {
   outline: 6px solid var(--hover-color);
@@ -130,7 +130,7 @@ ul li a:hover {
   background: var(--hover-color);
 }
 footer a {
-  color:rgb(148, 129, 105)
+  color: rgb(148, 129, 105);
 }
 footer {
   padding: 24px 0;
@@ -146,18 +146,18 @@ footer {
   }
 }
 @keyframes slide-in {
-  from { 
-  left: 0;
+  from {
+    left: 0;
   }
   to {
-left: 50%;
+    left: 50%;
   }
 }
 @keyframes slide-back {
   from {
-left: 50%;
+    left: 50%;
   }
   to {
-left: 0;
+    left: 0;
   }
 }
